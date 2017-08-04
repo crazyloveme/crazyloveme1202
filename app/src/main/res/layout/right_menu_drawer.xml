@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/redsepratorline" >
+
+    <RelativeLayout
+        android:id="@+id/relative_drawerfooter"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+         >
+        
+         <View 
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/buttonfonts"
+            android:layout_above="@+id/list_drawer"/>
+
+        <ListView
+            android:id="@+id/list_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/redsepratorline"
+            android:divider="@color/white"
+            android:dividerHeight="1dp"
+            >
+        </ListView>
+       
+    </RelativeLayout>
+ <View 
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/buttonfonts"
+            android:layout_toRightOf="@+id/relative_drawerfooter"/>
+</RelativeLayout>

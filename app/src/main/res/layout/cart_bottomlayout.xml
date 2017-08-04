@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/edt_spclinstruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_specialinstruction"
+        android:gravity="top|left"
+        android:visibility="visible"
+        android:hint="Special Instructions"
+        android:minHeight="50dp"
+        android:padding="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/rel_priceinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_spclinstruction"
+        android:layout_margin="10dp" >
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_staticsubTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_sep2"
+            android:layout_marginTop="20dp"
+            android:text="Sub Total"
+            app:fontName="GothamMedium"
+            android:textColor="@color/textfonts"
+            android:textSize="16dp"
+            />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/view_sep2"
+            android:layout_marginTop="20dp"
+            android:text="$59.00"
+            android:textColor="@color/textfonts"
+            android:textSize="16dp"
+            app:fontName="GothamMedium" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_staticTaxes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_staticsubTotal"
+            android:layout_marginTop="10dp"
+            android:text="Taxes"
+            android:textColor="@color/textfonts"
+            android:textSize="16dp"
+            app:fontName="GothamMedium" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_taxes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/text_subtotal"
+            android:layout_marginTop="10dp"
+            android:text="$0.00"
+            android:textColor="@color/textfonts"
+            android:textSize="16dp"
+            app:fontName="GothamMedium" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_staticcomiision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_staticTaxes"
+            android:layout_marginTop="10dp"
+            android:text="Zapnabit Commission"
+            android:textColor="@color/textfonts"
+            android:textSize="16dp"
+            app:fontName="GothamMedium" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_comission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/text_taxes"
+            android:layout_marginTop="10dp"
+            android:text="$0.00"
+            android:textColor="@color/textfonts"
+            android:textSize="16dp"
+            app:fontName="GothamMedium" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_staticfee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_staticcomiision"
+            android:layout_marginTop="10dp"
+            android:text="Delivery Fee"
+            android:textColor="@color/textfonts"
+            android:textSize="16dp"
+            app:fontName="GothamMedium" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/text_comission"
+            android:layout_marginTop="10dp"
+            android:text="$0.00"
+            android:textColor="@color/textfonts"
+            android:textSize="16dp"
+            app:fontName="GothamMedium" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_statictotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_staticfee"
+            android:layout_marginTop="10dp"
+            android:text="Total"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            app:fontName="GothamMedium" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/text_fee"
+            android:layout_marginTop="10dp"
+            android:text="$59.00"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            app:fontName="GothamMedium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/text_total"></View>
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rel_priceinfo"
+        android:layout_height="1dp"
+        android:background="@color/sepratorline"></View>
+    <include
+        android:id="@+id/rel_ordertype"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/view"
+        android:layout_height="wrap_content"
+        layout="@layout/cart_delivery_view"></include>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rel_ordertype"
+        android:layout_height="1dp"
+        android:background="@color/sepratorline"></View>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/view1"
+        android:layout_height="70dp"
+       ></View>
+
+</RelativeLayout>

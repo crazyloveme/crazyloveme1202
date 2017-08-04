@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="200dp"
+    android:layout_height="120dp"
+     >
+
+    <RelativeLayout
+        android:id="@+id/rel_markerinfo"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:background="@drawable/marker_bg" >
+        
+        <ImageView
+
+            android:id="@+id/img_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:src="@drawable/map_screen_arrow"/>
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_plcename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="1dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:layout_toLeftOf="@+id/img_arrow"
+            android:maxLines="2"
+            android:text="Fireside grill dfasfasfasfasf"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            app:fontName="GothamMedium" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/text_plcename"
+            android:maxLength="15"
+            android:paddingBottom="1dp"
+            android:paddingLeft="10dp"
+            android:text="394 Weasley St"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            app:fontName="GothamLight" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/text_address"
+            android:paddingBottom="1dp"
+            android:paddingLeft="10dp"
+            android:text="4 miles"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            app:fontName="GothamLight" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_markerIamhere"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="@drawable/marker_bg" >
+
+
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_iamhere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="1dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:maxLines="2"
+            android:text="I am here"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            app:fontName="GothamMedium" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

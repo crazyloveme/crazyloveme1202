@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/redsepratorline">
+
+    <RelativeLayout
+        android:id="@+id/rel_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/redsepratorline">
+
+    <in.pjitsol.zapnabit.Ui.CustomTextView
+        android:id="@+id/text_module"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="5dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+
+        android:text="Notification"
+        android:layout_toRightOf="@+id/img_menu"
+        android:textColor="@color/buttonfonts"
+        android:textSize="15dp"
+        app:fontName="GothamMedium" />
+
+    <in.pjitsol.zapnabit.Ui.CustomTextView
+        android:id="@+id/text_moduleinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_module"
+        android:layout_marginTop="-10dp"
+        android:gravity="left"
+        android:layout_toRightOf="@+id/img_menu"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:text="Notification"
+        android:textColor="@color/buttonfonts"
+        android:textSize="14dp"
+        app:fontName="GothamMedium" />
+
+    <!--<ImageView
+        android:id="@+id/img_customerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:src="@drawable/googlemap" />-->
+
+    <ImageView
+        android:id="@+id/img_customerviewGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:src="@drawable/googlegrey" />
+
+    <ImageView
+        android:id="@+id/img_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:src="@drawable/googlegrey" />
+
+    <ImageView
+        android:id="@+id/img_secondtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:src="@drawable/googlegrey" />
+
+    <ImageView
+        android:id="@+id/img_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:src="@drawable/arrow_white" />
+
+
+    <in.pjitsol.zapnabit.Ui.CustomTextView
+        android:id="@+id/text_secondtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/img_secondtype"
+        android:src="@drawable/googlegrey"
+        android:text="test"
+        app:fontName="GothamMedium"
+        android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>

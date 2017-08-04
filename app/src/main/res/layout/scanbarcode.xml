@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+          >
+
+
+            <in.pjitsol.zapnabit.Ui.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:text="@string/saveitempublish"
+                android:textColor="@color/black_transparent_color"
+                android:textSize="18dp"
+                android:gravity="center"
+                app:fontName="GothamMedium" />
+            <in.pjitsol.zapnabit.Ui.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/publish"
+                android:textColor="@color/black_transparent_color"
+                android:textSize="12dp"
+                app:fontName="GothamMedium" />
+
+
+            <in.pjitsol.zapnabit.Ui.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/scanning"
+                android:textColor="@color/black_transparent_color"
+                android:textSize="16dp"
+                app:fontName="GothamLight" />
+
+            <in.pjitsol.zapnabit.Ui.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:text="Tips:"
+                android:textColor="@color/black_transparent_color"
+                android:textSize="14dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                app:fontName="GothamMedium" />
+
+            <in.pjitsol.zapnabit.Ui.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/tips"
+                android:padding="10dp"
+                android:textColor="@color/black_transparent_color"
+                android:textSize="14dp"
+                app:fontName="GothamMedium" />
+
+            <in.pjitsol.zapnabit.Ui.CustomTextView
+                android:id="@+id/text_scanpublish"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@color/red"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Start Scan"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                app:fontName="GothamLight" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/black_transparent_color"></View>
+
+            <in.pjitsol.zapnabit.Ui.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="10dp"
+                android:text="@string/saveitem"
+                android:textColor="@color/black_transparent_color"
+                android:textSize="18dp"
+                app:fontName="GothamMedium" />
+
+            <in.pjitsol.zapnabit.Ui.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/update"
+                android:textColor="@color/black_transparent_color"
+                android:textSize="16dp"
+                app:fontName="GothamLight" />
+
+            <in.pjitsol.zapnabit.Ui.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/Category"
+                android:textColor="@color/black_transparent_color"
+                android:textSize="16dp"
+                app:fontName="GothamLight" />
+
+            <in.pjitsol.zapnabit.Ui.CustomTextView
+                android:id="@+id/text_scan"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@color/red"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Start Scan"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                app:fontName="GothamLight" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                ></View>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp" >
+
+        <ImageView
+            android:id="@+id/text_staticZapnabit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/zap_logo" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_satticorderpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_staticZapnabit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/red"
+            android:textSize="13dp"
+            android:gravity="center"
+            app:fontName="GothamLight"
+            android:text="Get Local Stuff Now, Food - Restaurants - Merchandise, Home or Highway" />
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_satticlogininfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_satticorderpay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="@string/logininfo"
+            app:fontName="GothamLight" />
+
+        <LinearLayout
+            android:id="@+id/linear_signinsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_satticorderpay"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="LOG IN"
+                    android:textColor="@color/textfonts"
+                    android:textSize="20dp"
+                    app:fontName="GothamMedium" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/text_signin"
+                    android:background="@color/red" >
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="SIGN UP"
+                    android:textColor="@color/lines"
+                    android:textSize="20dp"
+                    app:fontName="GothamMedium" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/text_signup"
+                    android:background="@color/lines" >
+                </View>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

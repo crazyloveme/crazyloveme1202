@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <in.pjitsol.zapnabit.Ui.CustomTextView
+        android:id="@+id/txt_textenter"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/view1"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        app:fontName="GothamLight"
+        android:text="@string/serachmerinfo"/>
+</LinearLayout>

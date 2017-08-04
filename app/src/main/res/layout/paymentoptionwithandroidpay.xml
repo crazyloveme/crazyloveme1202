@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transparent_color"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="15dp" >
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_thumb"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:text="Select Payment Option"
+            android:textColor="@color/textfonts"
+            android:textSize="16dp"
+            app:fontName="GothamMedium" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info"
+            android:id="@+id/RadioGroup_logintype"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:checkedButton="@+id/sound" >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/paypal"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:drawablePadding="1dp"
+                android:drawableRight="@drawable/paypal_image"
+                android:text=""
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/card"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:text="Pay via Credit/Debit Card" />
+           <!-- <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/androidpay"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:text="Android Pay" />-->
+
+        </RadioGroup>
+
+
+
+        <Button
+            android:id="@+id/btn_okotp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/RadioGroup_logintype"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="PAY"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textSize="16dp"
+            app:fontName="UbuntuMedium"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:layout_below="@+id/btn_okotp"/>
+        <!--<Button
+            android:id="@+id/btn_androidpay"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/text_or"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="ANDOID PAY"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />-->
+        <FrameLayout
+            android:id="@+id/dynamic_wallet_button_fragment"
+            android:layout_height="48dp"
+            android:layout_width="200dp"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@+id/text_or"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Confirm"
+        android:visibility="gone"
+        />
+</RelativeLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_cardDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/et_carnumbername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:text="Card Number"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/textfonts"
+            android:maxLength="16"
+            android:textSize="14dp"
+            app:fontName="GothamLight" />
+
+        <in.pjitsol.zapnabit.Ui.CustomEditView
+            android:id="@+id/et_name"
+            android:layout_below="@+id/et_carnumbername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:hint="Card Number"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:maxLength="16"
+            android:textSize="14dp"
+            app:fontName="GothamLight" />
+
+        <View
+
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/et_name"
+            android:background="@color/lines" />
+
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/et_exipry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@+id/view1"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:text="Expiration Date"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/textfonts"
+            android:maxLength="16"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            app:fontName="GothamLight" />
+
+        <in.pjitsol.zapnabit.Ui.CustomEditView
+            android:id="@+id/et_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_exipry"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:hint="Month"
+            android:padding="10dp"
+            android:inputType="number"
+            android:maxLength="2"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:textSize="14dp"
+            app:fontName="GothamLight" />
+
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_slash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_exipry"
+            android:layout_toRightOf="@+id/et_month"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:text="/"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:inputType="number"
+            app:fontName="GothamLight" />
+
+        <in.pjitsol.zapnabit.Ui.CustomEditView
+            android:id="@+id/et_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_exipry"
+            android:layout_toRightOf="@+id/text_slash"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:hint="Year"
+            android:layout_marginTop="5dp"
+            android:maxLength="4"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:textSize="14dp"
+            app:fontName="GothamLight" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/et_month"
+            android:background="@color/lines" />
+
+
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/et_cvvtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@+id/view2"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:text="CVV"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/textfonts"
+            android:maxLength="16"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            app:fontName="GothamLight" />
+
+        <in.pjitsol.zapnabit.Ui.CustomEditView
+            android:id="@+id/et_cvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_cvvtext"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:hint="Enter your cvv"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:padding="10dp"
+            android:maxLength="3"
+            android:singleLine="true"
+            android:textSize="14dp"
+            app:fontName="GothamLight" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/et_cvv"
+            android:background="@color/lines" />
+
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/et_cvv"
+            android:background="@color/red"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="SUBMIT"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            app:fontName="GothamMedium" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_webview"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

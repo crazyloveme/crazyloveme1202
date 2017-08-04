@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linear_attrbuteon"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomtotal"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="2.5">
+
+        <LinearLayout
+            android:id="@+id/linear_topAttribute"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight=".4"
+            android:background="@color/black_transparent_color"
+            android:gravity="center"
+            android:orientation="vertical"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/text_addextraAttribute"
+                android:fillViewport="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/linear_upperaddon"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@color/white"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_productAttribute"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/lines">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.4"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+
+                        <RelativeLayout
+                            android:id="@+id/rel_productinfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <in.pjitsol.zapnabit.Ui.CustomTextView
+                                android:id="@+id/text_productnameAttribute"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="4dp"
+                                android:text="big Burger"
+                                android:textColor="@color/textfonts"
+                                android:textSize="16dp"
+                                app:fontName="GothamMedium" />
+
+                            <in.pjitsol.zapnabit.Ui.CustomTextView
+                                android:id="@+id/text_productDescLabelAttribute"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/text_productpricelabelAttribute"
+                                android:layout_marginTop="5dp"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Description"
+                                android:textColor="@color/lines"
+                                android:textSize="14dp"
+                                app:fontName="GothamMedium" />
+
+                            <in.pjitsol.zapnabit.Ui.CustomTextView
+                                android:id="@+id/text_productDescAttribute"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/text_productDescLabelAttribute"
+                                android:lineSpacingExtra="4dp"
+                                android:text="big Burger"
+                                android:textColor="@color/lines"
+                                android:textSize="14dp"
+                                app:fontName="GothamMedium" />
+
+                            <in.pjitsol.zapnabit.Ui.CustomTextView
+                                android:id="@+id/text_productpricelabelAttribute"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/img_plusattribute"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignTop="@+id/img_plusattribute"
+                                android:layout_below="@+id/text_productnameAttribute"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="bottom"
+                                android:text="Select Main Quantity "
+                                android:textColor="@color/textfonts"
+                                android:textSize="15dp"
+                                app:fontName="GothamMedium" />
+
+                            <in.pjitsol.zapnabit.Ui.CustomTextView
+                                android:id="@+id/text_productprice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/img_plusattribute"
+                                android:layout_alignTop="@+id/img_plusattribute"
+                                android:layout_below="@+id/text_productnameAttribute"
+                                android:layout_marginBottom="10dp"
+                                android:layout_toRightOf="@+id/text_productpricelabelAttribute"
+                                android:gravity="bottom"
+                                android:text=""
+                                android:textColor="@color/red"
+                                android:textSize="15dp"
+                                app:fontName="GothamMedium" />
+
+                            <ImageView
+                                android:id="@+id/img_plusattribute"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@+id/text_productnameAttribute"
+                                android:src="@drawable/plus" />
+
+                            <in.pjitsol.zapnabit.Ui.CustomTextView
+                                android:id="@+id/text_productqtyAttribute"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/img_plusattribute"
+                                android:layout_alignTop="@+id/img_plusattribute"
+                                android:layout_below="@+id/text_productnameAttribute"
+                                android:layout_toLeftOf="@+id/img_plusattribute"
+                                android:gravity="center"
+                                android:text="1"
+                                app:fontName="GothamMedium" />
+
+                            <ImageView
+                                android:id="@+id/img_minusAttribute"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/text_productnameAttribute"
+                                android:layout_toLeftOf="@+id/text_productqtyAttribute"
+                                android:src="@drawable/minus" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/rel_productinfo"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/buttonfonts" />
+
+                        <in.pjitsol.zapnabit.Ui.CustomTextView
+                            android:id="@+id/text_chooseattri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/view"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:text="CHOOSE EXTRA"
+                            android:textSize="18dp"
+                            app:fontName="GothamMedium" />
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text_chooseattri"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="20dp"
+                            android:fillViewport="true">
+
+                            <LinearLayout
+                                android:id="@+id/linear_attributeslayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/text_addextra"
+                                android:layout_below="@+id/text_choose"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="vertical"></LinearLayout>
+
+                        </ScrollView>
+
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+            </ScrollView>
+            <in.pjitsol.zapnabit.Ui.CustomTextView
+                android:id="@+id/text_addextraAttribute"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:background="@color/red"
+                android:gravity="center"
+                android:text="ADD EXTRA"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                app:fontName="GothamMedium" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

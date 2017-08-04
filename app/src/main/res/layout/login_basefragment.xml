@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.pjitsol.zapnabit.MainActivity">
+
+
+    
+    <include 
+        android:id="@+id/loginheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/login_header"/>
+
+
+    <FrameLayout
+        android:layout_below="@+id/loginheader"
+        android:id="@+id/baseLogincontainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+</RelativeLayout>

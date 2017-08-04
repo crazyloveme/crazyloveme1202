@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <include 
+      android:id="@+id/rel_search"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      layout="@layout/search_header"
+      android:visibility="gone"/>
+    
+   
+    <fragment 
+		android:id="@+id/map"
+		android:layout_below="@+id/rel_search"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		class="com.google.android.gms.maps.SupportMapFragment" />
+     <ImageView 
+         android:id="@+id/text_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/list_icon_red"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+	<ImageView
+		android:id="@+id/img_radar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/radar"
+		android:visibility="invisible"
+		android:paddingLeft="10dp"
+		android:paddingRight="20dp"
+		android:paddingTop="20dp"
+		android:paddingBottom="2dp"
+		android:layout_alignParentLeft="true"
+		android:layout_above="@+id/img_radarlink"
+		android:layout_centerVertical="true"/>
+
+	<ImageView
+		android:id="@+id/img_radarlink"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/radarlink"
+		android:paddingLeft="10dp"
+		android:paddingRight="20dp"
+		android:paddingBottom="30dp"
+		android:visibility="invisible"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentBottom="true"
+		android:layout_centerVertical="true"/>
+     <include 
+        android:layout_below="@+id/rel_search"
+        android:id="@+id/rel_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/search_fragment"/>
+</RelativeLayout>

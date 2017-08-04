@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">ZapNabit</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="enjoy_the_best_food">Enjoy the best food and best prices.\nYour order is ready when you arrive!</string>
+    <string name="error_dialog_error">Unable to complete the process at this time Please, confirm that you have a data connection and try again, later..</string>
+    <string name="error_dialog_no_results">No results found. Try changing your criteria.</string>
+    <string name="error_dialog_server_error">A problem occurred retrieving results. Please try again later.</string>
+    <string name="error_dialog_error_unknown">An unknown error has occurred. Please try again.</string>
+    <!-- Network Error message -->
+    <string name="error_dialog_search_error">Unable to complete search at this time. Please check you have a data connection and try again later</string>
+    <string name="error_dialog_search_no_results">No results found.</string>
+    <string name="error_dialog_search_server_error">A problem occurred retrieving results. Please try again later.</string>
+    <string name="error_dialog_search_error_unknown">An unknown error has occurred. Please try searching again.</string>
+    <string name="label_loading_refresh">Loading…</string>
+    <string name="congratulations">Your ZapNabit account is linked, and customers are able to view your business.
+        Please be sure to complete your Merchant Profile on your admin panel.\n
+    Your Customer View is currently \"Off\". Please, be certain your business profile is updated, and remember to
+        turn "On" your Customer View.</string>
+     <string name="customerview">
+    Your Customer View is currently  \"Off\". Please, be certain your business profile is updated, and remember to
+        turn "On" your Customer View.</string>
+    <string name="app_id">1654598528171907</string>
+    <string name="recheck">Sure about the correct price and category for this item?</string>
+    <string name="logout">Your Customer View is \"Off\". Log out?</string>
+    <string name="mall">\"The Pocket Mall\"</string>
+    <string name="leavevariable">Oops! At least one(1) item from each category must be selected.\"No\" will cancel the order.\"Yes\" to make a correction. </string>
+    <string name="orderreceived">Your order has been received.\nif necessary please call the place of business and confirm.</string>
+    <string name="logininfo">Use the same credentials you used to create your account above login form</string>
+    <string name="privacyheading">Your privacy is our top priority. Accordingly, we have developed this Privacy Policy in order for you to understand how we collect, use, communicate, disclose, and make use of personal information. The following applies:</string>
+    <string name="privacy1">\u2022 If we don’t need the information to provide better services we will not request, save, store, or disseminate any collected data or information.</string>
+    <string name="privacy2">\u2022 Otherwise, except where required by law or regulations all provided information and data are immediately destroyed or deleted and never shared with outside sources without your consent.</string>
+    <string name="privacy3">\u2022 Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.</string>
+    <string name="privacy4">\u2022 We will collect and use personal information solely with the objective of fulfilling those purposes specified by us and for other compatible purposes, unless we obtain the consent of the individual concerned or as required by law.</string>
+    <string name="privacy5">\u2022 We will only retain personal information as long as necessary for the fulfillment of those purposes.</string>
+    <string name="privacy6">\u2022 We do not have any mechanism to retrieve, or store data that is deleted by the user.</string>
+    <string name="privacy7">\u2022 We will collect personal information by lawful and fair means and where appropriate with the knowledge or consent of the individual concerned.</string>
+    <string name="privacy8">\u2022  Personal data will be relevant to the purposes for which it is to be used, and to the extent necessary for those purposes, should be accurate, complete, and up-to-date.</string>
+    <string name="privacy9">\u2022 We will protect personal information by reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use, or modification.</string>
+    <string name="privacy10">\u2022 We will endeavor to use state of the art security measures to protect your information from unauthorized users.</string>
+    <string name="privacy11">\u2022Any known or discovered breach of your personnel information will be immediately disclosed with all reasonable dispatch.</string>
+    <string name="privacy12">\u2022We will make readily available to customers information about our policies and practices relating to the management of personal information.</string>
+    <string name="privacyending">We are committed to conducting our business in accordance with these principles in order to ensure the highest possible level of safeguards, personal privacy; and that the confidentiality of your personal information is protected, and maintained.
+PromulgatedFeb’17.</string>
+    <string name="terry2">If no ZapNabit merchants are available in your local home or highway area you can send them quick notes letting them know you tried to order and they need to become a ZapNabit Merchant – better for you, better for them.\n\n“Get Local Stuff Now”\nZapNabit Team</string>
+    <string name="terry">We are developers, programmers, and software engineers worldwide who love what we do.\nWe work hard and spend a lot of time at our computers, online, or driving to events.\nOne day our Founder asked a simple question. “Why isn’t there a simple and better way to get our stuff delivered, or to order stuff while we are on a road trip?”\nWell, that led us in to research, development, and a few short years later: ZapNabit.\nBut, it’s not just for us anymore, any merchant or customer worldwide can get stuff delivered – home or highway. Local ZapNabit merchants selling food or merchandise are instantly displayed within your vicinity, so you can order then pick-up or have delivered – from home or highway. SWEET!</string>
+ <string name="searchinfo1">1. Enter the name of your business, or any tags that YELP \'s database may use to locate your
+     business such as, Mcdonald \'s, Auto Parts, Mexican etc. </string>
+    <string name="searchinfo2">2. Click on Search icon and select your business from the list. </string>
+ <string name="searchinfo3">3. Select Business  Zapnabit will send a One-Time confirmation code to
+     your cellphone number that you have registered with Yelp.</string>
+    <string name="warningstart">WARNING: An OTP (One-Time-Password)</string>
+    <string name="warning">will be sent to the YELP registered cellphone number of the business selected. Only select a business if it is your YELP registered business. If you are not YELP registered, enter any random string of text or numbers,
+        and then use your Google Address to verify your business. </string>
+  <string name="searchinfo4">4. Enter One-time confirmation code on your mobile app &amp; if Code is correct then your business gets
+         registered on ZapNabit and now your business is available to customer.</string>
+    <string name="nodelivery">This establishment does not accept delivery orders.</string>
+    <string name="paymentarrival">DOES NOT ACCEPT ADVANCE PAYMENT:\nThis establishment requires payment upon your arrival or delivery. Please, call and confirm your order. Fees may apply.</string>
+    <string name="outsiderange">Sorry this place of business is outside your delivery range or the merchant has not completed their profile, Please, make another selection.</string>
+    <string name="profile">Sorry the merchant has\nnot completed their profile.\nPlease make another selection</string>
+    <string name="menu">Sorry menu items are not completed.\nPlease make another selection</string>
+    <string name="nonzapnabitinfo">Using ZapNabit I tried to order from home or the highway. Maybe next time. Thank-you. Details at: www.zapnabit.com.</string>
+    <string name="chainrestoinfo">Sorry, the Account Owner is not authorized to accept orders or payment. If you are the Account Owner please, remember to Log in As Merchant and turn Customer View OFF.</string>
+    <string name="logintype">Using a different login procedure will create a different user account. Please, update your profile as necessary </string>
+    <string name="facebook_app_id">825700724239340</string>
+    <string name="restooff">Sorry, Currently restaurant is off.\nPlease try after some time.</string>
+    <string name="fb_login_protocol_scheme">fb825700724239340</string>
+    <string name="advancepayment">This establishment accepts payment in advance.</string>
+    <string name="recvorder">Your business is available to receive orders. When any customer places an order, you can view the order on this screen.</string>
+    <string name="serachmerinfo">Enter your business name in above box and press done key or click search icon. Then select your business from the list.</string>
+
+    <string name="notice">NOTICE: Your updated image may not immediately appear if you’re checking by immediately logging out and then logging back in.  Sometimes,
+        it takes a while to process your new image. Give it more time, check back later.</string>
+    <string name="withoutyelp">INPUT <u>THE SAME ADDRESS</u> YOU USED WHEN YOU CREATED YOUR MERCHANT ACCOUNT.</string>
+    <string name="input">Then select from the dropdown list.</string>
+    <string name="verificationtext">Your establishment is not Yelp verified. Payment in advance is not available. Customers must pay upon pick up(arrival) or delivery.\n\nClicking on OK button will send One-Time Password to your Zapnabit registered phone number.</string>
+    <string name="noyelp">ZapNabit cannot YELP<sup><small><small><small>TM</small></small></small></sup> verify your business.Try again, or use your Google<sup><small><small><small>TM</small></small></small></sup> address to verify.\n\n
+        If you verify by using Google<sup><small><small><small>TM</small></small></small></sup> Address, you will not be able to accept payment in advance.</string>
+    <string name="selectoption">After selecting your address from the Google dropdown list, select an option, Facebook or G+.</string>
+
+    <string name="publish">(Goes directly to your Admin Menu and Customers.)</string>
+    <string name="saveitempublish">Publish</string>
+    <string name="tips">- Not all barcodes are equal, some work, some don\'t. If this scan fails try
+        the one below(Save Item to Admin menu folder).\n- Low light can interfere with bar code scanning.\n- Multiple personnel can log into your Merchant Account
+        and simultaneously Publish Product.
+       </string>
+    <string name="info">From this feature you can add all items directly to customers menu. Below are the steps to use it.</string>
+    <string name="scanning">1. VERY IMPORTANT: After each item is scanned you will have to select a CATEGORY. So, make sure you have created the CATEGORY for that menu item on your Admin panel BEFORE STARTING YOUR SCAN.
+      </string>
+    <string name="saveitem">Save item to Admin menu folder.</string>
+    <string name="update">From this feature you can save items to admin, from where you can edit/publish anytime.\nBelow are the steps to use it.</string>
+    <string name="Category">1. Click on below button to start scanning.\n2. Scan bar code and once we get the information of product.
+        then it will automatically gets saved into your Admin Menu folder.
+    \n3. You will get the notification about successful product saved.
+   </string>
+    <string name="scanmore">Product saved successfully in admin menu folder.</string>
+     <string name="takepicture">1. Click on below button to take picture.\n2. Enter the name of product.
+        \nSelect Save &amp; Take New/Save &amp; Exit according to your requirement.
+    \n\nAll these items will appear in the admin panel from where you can fill product information &amp; publish.
+   </string>
+
+    <string name="noticemerchant"> NOTICE: You must be within 2 miles of your registered business address when verifying. If you click on a business that is not yours, you will not be able to complete your Business Verification. If your business is not listed, please, try again or enter any random text in search bar above then use Google Address to verify your business. NOTE: Google Address verified businesses cannot receive Payment in Advance.</string>
+    <string name="saveitemName">To save you must enter an item name.</string>
+    <string name="loginfailure">Login failure\n\nInvalid credentials or deactivated by Admin.\n\n\nPlease, log into your Zapnabit Dashboard and complete all required Contact Details, then try again </string>
+<string name="assigndriver">Scroll down on this screen then select \"Assign Driver\".\n\n(To add new drivers go to website,then Merchant Log in.)</string>
+    <string name="crash_toast_text">Sorry for the inconvenience , Please share the report</string>
+</resources>

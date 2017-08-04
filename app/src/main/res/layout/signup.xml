@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <in.pjitsol.zapnabit.Ui.CustomEditView
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:hint="Name"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="18dp"
+            app:fontName="GothamLight" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/et_name"
+            android:background="@color/lines" />
+
+        <in.pjitsol.zapnabit.Ui.CustomEditView
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="18dp"
+            app:fontName="GothamLight" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/et_email"
+            android:background="@color/lines" />
+
+        <in.pjitsol.zapnabit.Ui.CustomEditView
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view2"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="18dp"
+            app:fontName="GothamLight" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/et_password"
+            android:background="@color/lines" />
+
+        <in.pjitsol.zapnabit.Ui.CustomEditView
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view3"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:hint="Phone No"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="18dp"
+            app:fontName="GothamLight" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/et_phone"
+            android:background="@color/lines" />
+
+        <in.pjitsol.zapnabit.Ui.CustomAutoCompleteTextView
+            android:id="@+id/et_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view4"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:hint="City"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="18dp"
+            app:fontName="GothamLight" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/et_city"
+            android:background="@color/lines" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_goback"
+            android:layout_marginTop="30dp"
+            android:background="@color/red"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="SIGN UP"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            app:fontName="GothamMedium" />
+        
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_goback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="GO BACK"
+            android:textColor="@color/textfonts"
+            android:textSize="20dp"
+            app:fontName="GothamMedium" />
+    </RelativeLayout>
+
+</RelativeLayout>

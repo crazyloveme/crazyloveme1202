@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e26969</color>
+    <color name="colorPrimaryDark">#e26969</color>
+    <color name="colorAccent">#e26969</color>
+    <color name="red">#e26969</color>
+    <color name="textfonts">#27262c</color>
+    <color name="lines">#ada8ad</color>
+    <color name="buttonfonts">#efefef</color>
+    <color name="white">#ffffff</color>
+    <color name="sepratorline">#ada8ad</color>
+    <color name="redsepratorline">#b44242</color>
+    <color name="black_transparent_color">#90000000</color>
+    <color name="redtransparent">#90e26969</color>
+    <color name="darkgreen">#0aa636</color>
+    <color name="lightgreen">#70f195</color>
+    <color name="red_dark">#6f2c2c</color>
+
+</resources>

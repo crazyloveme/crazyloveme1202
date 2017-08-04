@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:background="@color/red"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <ImageView 
+        android:id="@+id/img_sdktype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        />
+    
+    
+   <!--  <in.pjitsol.zapnabit.Ui.CustomTextView 
+        android:id="@+id/text_changesearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Search"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:padding="10dp"
+         app:fontName="GothamMedium"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        /> -->
+    
+    <in.pjitsol.zapnabit.Ui.CustomTextView 
+        android:id="@+id/text_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Link Restaurant"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+       app:fontName="GothamMedium"
+        android:padding="10dp"
+        android:visibility="invisible"
+       android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    
+    <View 
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/redsepratorline"/>
+
+    <include
+        android:id="@+id/rel_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        layout="@layout/search_header" />
+   <View 
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/rel_search"
+        android:background="@color/redsepratorline"/>
+
+  <!--   <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view1"
+        class="com.google.android.gms.maps.SupportMapFragment" /> -->
+
+   <!--  <ImageView
+        android:id="@+id/text_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/list_icon_red" /> -->
+ <ListView
+        android:id="@+id/list_searchresult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:layout_below="@+id/view1"
+        android:background="@color/white" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/rel_norecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true">
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/textstatic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="16dp"
+            app1:fontName="GothamMedium"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/noyelp"/>
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/textverify"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textstatic"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="3dp"
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:minWidth="150dp"
+            android:textSize="17dp"
+            app1:fontName="GothamLight"
+            android:text="USE MY GOOGLE\nADDRESS TO VERIFY"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

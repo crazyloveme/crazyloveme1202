@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <in.pjitsol.zapnabit.Ui.CustomTextView
+        android:id="@+id/text_productname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/text_productqty"
+        android:layout_alignParentLeft="true"
+        android:text="Filet Mignon Burger"
+        android:textColor="@color/textfonts"
+        android:textSize="16dp"
+        app:fontName="GothamLight" />
+
+    <in.pjitsol.zapnabit.Ui.CustomTextView
+        android:id="@+id/text_productprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="7dp"
+        android:text="$59.00"
+        android:textColor="@color/textfonts"
+        android:textSize="16dp"
+        app:fontName="GothamMedium" />
+
+    <in.pjitsol.zapnabit.Ui.CustomTextView
+        android:id="@+id/text_productqty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        android:layout_alignParentRight="true"
+        android:padding="7dp"
+        android:text="X2"
+        android:textColor="@color/textfonts"
+        android:textSize="16dp"
+        app:fontName="GothamLight" />
+
+</RelativeLayout>

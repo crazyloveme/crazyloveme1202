@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear_bottom">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp" >
+
+
+
+                <ListView
+                    android:id="@+id/list_itemdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewseprator"
+                    android:layout_marginTop="3dp"
+                    android:orientation="vertical"
+                    android:divider="@android:color/transparent" >
+
+
+                </ListView>
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linear_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_getDirections"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:gravity="center"
+            android:text="Get Direction"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:fontName="GothamMedium"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

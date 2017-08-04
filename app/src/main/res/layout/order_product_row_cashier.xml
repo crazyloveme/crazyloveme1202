@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+
+    android:minHeight="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingRight="10dp" >
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/name_cashier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".7"
+            android:text="Sample"
+            android:textColor="@color/textfonts"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:fontName="GothamLight" />
+        
+        <ImageView 
+            android:id="@+id/img_edititem"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit"/>
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/quantitiy_cashier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/textfonts"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:fontName="GothamLight" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/price_cashier"
+            android:layout_width="0dp"
+            android:layout_weight=".6"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:minWidth="50dp"
+            android:text="$ 4.6"
+            android:textColor="@color/textfonts"
+            android:visibility="visible"
+            app:fontName="GothamMedium" />
+
+        <ImageView
+            android:id="@+id/img_deleteitem"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete"/>
+    </LinearLayout>
+
+   <!--  <LinearLayout
+        android:id="@+id/editdeletebuttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:minHeight="40dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="6" >
+
+        <View
+            android:id="@+id/blankView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+
+        <Button
+            android:id="@+id/product_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@color/darkgray"
+            android:text="@string/edit_item"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/product_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@color/red"
+            android:text="@string/delete_item"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout> -->
+
+</RelativeLayout>

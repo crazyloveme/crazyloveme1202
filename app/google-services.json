@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "187310968009",
+    "firebase_url": "https://zapnabitfinal.firebaseio.com",
+    "project_id": "zapnabitfinal",
+    "storage_bucket": "zapnabitfinal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187310968009:android:ad044f6e1f8a78c5",
+        "android_client_info": {
+          "package_name": "in.pjitsol.zapnabit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187310968009-i3v95ana6sjbgfq2grnrig6ammab7sfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3U-kShysUdVw_FaARhZjAI0MAd7pjveo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

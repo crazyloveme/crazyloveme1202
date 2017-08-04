@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="5dp" >
+
+        <in.pjitsol.zapnabit.Ui.RoundedImageView
+            android:id="@+id/img_resto"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/list_icon_red" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_placename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/img_resto"
+            android:maxLines="2"
+            android:padding="10dp"
+            android:text="Fireside Grill"
+            android:textColor="@color/red"
+            android:textSize="17dp"
+            app:fontName="GothamMedium" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:text="3.9 Miles"
+            android:textColor="@color/red"
+            android:textSize="15dp"
+            android:visibility="invisible"
+            app:fontName="GothamLight" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_placename"
+            android:layout_toRightOf="@+id/img_resto"
+            android:paddingLeft="10dp"
+            android:text="wz 20 tilak Nagar, New Delhi 30"
+            android:textColor="@color/textfonts"
+            android:textSize="14dp"
+            app:fontName="GothamLight" />
+
+        <RatingBar
+            android:id="@+id/rating"
+            style="@style/customRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_address"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:isIndicator="true"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/img_resto" />
+    </RelativeLayout>
+
+</RelativeLayout>

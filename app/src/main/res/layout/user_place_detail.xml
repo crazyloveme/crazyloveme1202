@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <in.pjitsol.zapnabit.Ui.RoundedImageView
+        android:id="@+id/img_restouser"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/list_icon_red" />
+
+    <ImageView
+        android:id="@+id/img_userfav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:src="@drawable/heart_small" />
+
+    <in.pjitsol.zapnabit.Ui.CustomTextView
+        android:id="@+id/text_placenameuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/img_restouser"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/text_distanceuser"
+        android:maxLines="2"
+        android:padding="10dp"
+        android:text="Fireside Grill"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        app:fontName="GothamMedium" />
+
+    <in.pjitsol.zapnabit.Ui.CustomTextView
+        android:id="@+id/text_restoStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/img_restouser"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="Open"
+        android:textColor="@color/red"
+        android:textSize="15dp"
+        android:visibility="visible"
+        app:fontName="GothamLight" />
+
+    <in.pjitsol.zapnabit.Ui.CustomTextView
+        android:id="@+id/text_distanceuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/text_restoStatus"
+        android:padding="10dp"
+        android:text="3.9 Miles"
+        android:textColor="@color/red"
+        android:textSize="15dp"
+        android:visibility="visible"
+        app:fontName="GothamLight" />
+
+
+    <in.pjitsol.zapnabit.Ui.CustomTextView
+        android:id="@+id/text_addressuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_distanceuser"
+        android:paddingLeft="10dp"
+        android:text="wz 20 tilak Nagar, New Delhi 30"
+        android:textColor="@color/textfonts"
+        android:textSize="15dp"
+        app:fontName="GothamLight" />
+
+    <in.pjitsol.zapnabit.Ui.CustomTextView
+        android:id="@+id/text_pricerange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_addressuser"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="Price Range: "
+        android:textColor="@color/textfonts"
+        android:textSize="16dp"
+        app:fontName="GothamMedium" />
+
+    <in.pjitsol.zapnabit.Ui.CustomTextView
+        android:id="@+id/text_pricerangevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_addressuser"
+        android:layout_toRightOf="@+id/text_pricerange"
+        android:paddingTop="3dp"
+        android:text="78"
+        android:textColor="@color/textfonts"
+        android:textSize="16dp"
+        app:fontName="GothamLight" />
+
+    <in.pjitsol.zapnabit.Ui.CustomTextView
+        android:id="@+id/text_timings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_pricerange"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text=""
+        android:textColor="@color/textfonts"
+        android:textSize="16dp"
+        app:fontName="GothamMedium" />
+
+    <in.pjitsol.zapnabit.Ui.CustomTextView
+        android:id="@+id/text_timingsvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_pricerange"
+        android:layout_toRightOf="@+id/text_timings"
+        android:paddingTop="10dp"
+        android:text=""
+        android:textColor="@color/textfonts"
+        android:textSize="16dp"
+        app:fontName="GothamMedium" />
+
+</RelativeLayout>

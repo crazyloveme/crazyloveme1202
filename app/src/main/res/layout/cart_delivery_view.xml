@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/buttonfonts">
+
+
+    <in.pjitsol.zapnabit.Ui.CustomTextView
+        android:id="@+id/text_selecttype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="Select Delivery/Pickup"
+        android:textSize="16dp"
+        app:fontName="GothamMedium" />
+
+    <LinearLayout
+        android:id="@+id/linear_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_selecttype"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_pickupOrderType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_delivery"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Pickup"
+            app:fontName="GothamMedium" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_deliveryOrderType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_delivery"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Delivery"
+            app:fontName="GothamMedium" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/linear_type"></View>
+
+    <LinearLayout
+        android:id="@+id/linear_addadress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:visibility="gone">
+
+        <in.pjitsol.zapnabit.Ui.CustomEditView
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:singleLine="true"
+            android:textSize="16dp"
+            app:fontName="GothamLight " />
+
+        <in.pjitsol.zapnabit.Ui.CustomEditView
+            android:id="@+id/edit_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Street Address"
+            android:singleLine="true"
+            android:textSize="16dp"
+            app:fontName="GothamLight " />
+
+        <in.pjitsol.zapnabit.Ui.CustomEditView
+            android:id="@+id/edit_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City,Town or Village"
+            android:textSize="16dp"
+            android:singleLine="true"
+            app:fontName="GothamLight " />
+
+        <in.pjitsol.zapnabit.Ui.CustomEditView
+            android:id="@+id/edit_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State"
+            android:textSize="16dp"
+            android:singleLine="true"
+            app:fontName="GothamLight " />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_selecttype"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/lines"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/red"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_updateadress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_satctiname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:fontName="GothamMedium"
+            android:text="Name: " />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/text_satctiname"
+            android:padding="5dp"
+            app:fontName="GothamLight"
+            android:text="Terry Reed " />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_editaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_editaddress"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:padding="7dp"
+            app:fontName="GothamLight"
+            android:textSize="10dp"
+            android:text="edit address " />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_satctiaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_satctiname"
+            android:padding="5dp"
+            app:fontName="GothamMedium"
+            android:text="Street Address: " />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_satctiname"
+            android:layout_toRightOf="@+id/text_satctiaddress"
+            android:padding="5dp"
+            app:fontName="GothamLight"
+            android:text="Tilak Nagar " />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_satcticity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_address"
+            android:padding="5dp"
+            app:fontName="GothamMedium"
+            android:text="City,Town or Village: " />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_address"
+            android:layout_toRightOf="@+id/text_satcticity"
+            android:padding="5dp"
+            app:fontName="GothamLight"
+            android:text="Delhi " />
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_satctistate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_city"
+            android:padding="5dp"
+            app:fontName="GothamMedium"
+            android:text="State: " />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_city"
+            android:layout_toRightOf="@+id/text_satctistate"
+            android:padding="5dp"
+            app:fontName="GothamLight"
+            android:text="Delhi " />
+
+    </RelativeLayout>
+</RelativeLayout>

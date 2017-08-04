@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <in.pjitsol.zapnabit.Ui.CustomEditView
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="left|center_vertical"
+        android:hint="Email Address"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        app:fontName="GothamLight"
+        android:singleLine="true"
+        android:textSize="18dp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/et_email"
+        android:background="@color/lines" />
+
+    <in.pjitsol.zapnabit.Ui.CustomEditView
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:background="@android:color/transparent"
+        android:gravity="left|center_vertical"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:fontName="GothamLight"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textSize="18dp" />
+
+    <View
+        android:id="@+id/viewpass"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/et_password"
+        android:background="@color/lines" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewpass"
+        android:id="@+id/RadioGroup_logintype"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="10dp"
+        android:checkedButton="@+id/sound" >
+
+        <RadioButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/merchant"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Merchant"
+             />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/driver"
+            android:layout_weight="1"
+            android:text="Driver" />
+
+    </RadioGroup>
+
+    <in.pjitsol.zapnabit.Ui.CustomTextView
+        android:id="@+id/text_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="80dp"
+        android:background="@color/red"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="LOG IN"
+         app:fontName="GothamMedium"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+
+
+
+    <in.pjitsol.zapnabit.Ui.CustomTextView
+        android:id="@+id/txt_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_signin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+         app:fontName="GothamLight"
+        android:text="Forgot your login details?"
+        android:textColor="@color/textfonts"
+        android:textSize="16dp" />
+
+
+
+
+   <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_goback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="GO BACK"
+            android:textColor="@color/textfonts"
+            android:textSize="20dp"
+            app:fontName="GothamMedium" />
+
+</RelativeLayout>

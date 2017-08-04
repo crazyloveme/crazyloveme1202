@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/txt_orderPaidStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:maxLines="1"
+            android:text="Paid"
+            android:textColor="@color/red"
+            android:textSize="18dp"
+            app:fontName="GothamMedium" />
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:layout_below="@+id/txt_orderPaidStatus"
+            android:id="@+id/txt_merchantname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="PJ Singh"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/txt_orderamount"
+            android:layout_marginRight="10dp"
+            android:maxLines="1"
+            android:textColor="@color/red"
+            android:textSize="18dp"
+            app:fontName="GothamMedium" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/txt_orderid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_merchantname"
+            android:text="Order Id: #9878978"
+            android:textColor="@color/textfonts"
+            android:textSize="14dp"
+            app:fontName="GothamLight" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:layout_below="@+id/txt_orderPaidStatus"
+            android:id="@+id/txt_orderamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="5dp"
+            android:text="$69.00"
+            android:textColor="@color/textfonts"
+            android:textSize="16dp"
+            app:fontName="GothamMedium" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_orderdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txt_orderamount"
+            android:text="Sep 09,2016 14:00"
+            android:textColor="@color/textfonts"
+            android:textSize="14dp"
+            app:fontName="GothamLight" />
+        
+        
+        
+         <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/txt_orderstatus"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txt_orderid"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/red"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"
+            android:text="ETA"
+            app:fontName="GothamMedium" />
+
+        <RelativeLayout
+            android:id="@+id/relativeStatusRelated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_orderstatus"
+            android:layout_marginTop="10dp"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:id="@+id/relativeStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/linearAcceptStatus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/accepted"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_rodone"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_marginRight="-1dp"
+                    android:layout_toLeftOf="@+id/linearReadyStatus"
+                    android:layout_toRightOf="@+id/linearAcceptStatus"
+                    android:background="@drawable/history_status"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearReadyStatus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ready"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_rodtwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_marginRight="-1dp"
+                    android:layout_toLeftOf="@+id/linearDoneStatus"
+                    android:layout_toRightOf="@+id/linearReadyStatus"
+                    android:background="@drawable/history_status"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearDoneStatus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/completed"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeStatusTExts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeStatus"
+                android:layout_marginTop="5dp" >
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Received"
+                    android:textColor="@color/textfonts"
+                    android:textSize="11dp"
+                    app:fontName="GothamLight" />
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_ready"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Ready"
+                    android:textColor="@color/textfonts"
+                    android:textSize="11dp"
+                    app:fontName="GothamLight" />
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Good-To-Go"
+                    android:textColor="@color/textfonts"
+                    android:textSize="11dp"
+                    app:fontName="GothamLight" />
+            </RelativeLayout>
+        </RelativeLayout>
+        
+         <RelativeLayout
+            android:id="@+id/relativeCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_below="@+id/txt_orderstatus"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/linearCancel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/search_circle"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:src="@drawable/cross" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_cancelStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/linearCancel"
+                android:text="You have cancelled this order"
+                android:textColor="@color/textfonts"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

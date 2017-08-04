@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="15dp" >
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/milesinfodriver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_thumb"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:lineSpacingExtra="2dp"
+            android:text="To assign driver for this order:"
+            android:textColor="@color/black_transparent_color"
+            android:textSize="16dp"
+            app:fontName="GothamMedium" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+
+            android:id="@+id/milesinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/milesinfodriver"
+            android:layout_marginTop="3dp"
+            android:gravity="left"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/assigndriver"
+            android:textColor="@color/black_transparent_color"
+            android:textSize="16dp"
+            app:fontName="GothamLight" />
+
+        <Button
+            android:id="@+id/btn_okotp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/milesinfo"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

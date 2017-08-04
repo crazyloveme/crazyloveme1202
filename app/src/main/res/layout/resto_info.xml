@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_resto"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:maxHeight="200dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <in.pjitsol.zapnabit.Ui.CustomTextView
+                android:id="@+id/text_restoname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_resto"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/red"
+                android:textSize="24dp"
+                app:fontName="GothamMedium" />
+
+            <in.pjitsol.zapnabit.Ui.CustomTextView
+                android:id="@+id/text_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:textColor="@color/red"
+                android:textSize="18dp" />
+
+            <in.pjitsol.zapnabit.Ui.CustomTextView
+                android:id="@+id/text_restoaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/text_restoname"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/text_distance"
+                android:maxLines="2"
+                android:textColor="@color/textfonts"
+                android:textSize="16dp"
+                app:fontName="GothamLight" />
+
+            <in.pjitsol.zapnabit.Ui.CustomTextView
+                android:id="@+id/text_restodirection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/text_restoaddress"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toLeftOf="@+id/text_distance"
+                android:maxLines="2"
+                android:textColor="@color/textfonts"
+                android:textSize="16dp"
+                app:fontName="GothamLight" />
+
+
+            <in.pjitsol.zapnabit.Ui.CustomTextView
+                android:id="@+id/text_restoDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_restodirection"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/textfonts"
+                android:textSize="16dp"
+                app:fontName="GothamLight" />
+
+            <RelativeLayout
+                android:id="@+id/linear_special"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_restoDesc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/img_special"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/special" />
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_special"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/img_special"
+                    android:lineSpacingExtra="3dp"
+                    android:maxLines="2"
+                    android:padding="10dp"
+                    android:textColor="@color/textfonts"
+                    android:textSize="16dp"
+                    app:fontName="GothamLight" />
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/linear_special"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/linear_ratingreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_special"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <RatingBar
+                    android:id="@+id/rating"
+                    style="@style/customRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_restodirection"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:isIndicator="true" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <in.pjitsol.zapnabit.Ui.CustomTextView
+                        android:id="@+id/text_reviewcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:minWidth="50dp"
+                        android:text="reviews"
+                        android:textColor="@color/textfonts"
+                        android:textSize="16dp"
+                        app:fontName="GothamLight" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_alignLeft="@+id/text_reviewcount"
+                        android:layout_alignRight="@+id/text_reviewcount"
+                        android:layout_below="@+id/text_reviewcount"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/textfonts"></View>
+
+                </RelativeLayout>
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Powered by"
+                    android:textColor="@color/textfonts"
+                    android:textSize="9dp"
+                    app:fontName="GothamLight" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/yelp_list" />
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/linear_ratingreview"
+                android:layout_marginTop="10dp"
+                android:background="@color/buttonfonts" />
+
+
+
+            <RelativeLayout
+                android:id="@+id/rel_restohour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_restohour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hours" />
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_statichour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_restohour"
+                    android:text="Hours:"
+                    android:textColor="@color/textfonts"
+                    android:textSize="16dp"
+                    app:fontName="GothamMedium" />
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/text_statichour"
+                    android:text="9.00-11.00"
+                    android:textColor="@color/textfonts"
+                    android:textSize="16dp"
+                    app:fontName="GothamLight" />
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_hourstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_hour"
+                    android:textColor="@color/textfonts"
+                    android:textSize="16dp"
+                    app:fontName="GothamLight" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/resto_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_restohour"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_restoPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/price" />
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_staticprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_restoPrice"
+                    android:text="Price Range:"
+                    android:textColor="@color/textfonts"
+                    android:textSize="16dp"
+                    app:fontName="GothamMedium" />
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/text_staticprice"
+                    android:textColor="@color/textfonts"
+                    android:textSize="16dp"
+                    app:fontName="GothamLight" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/resto_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resto_price"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_deliverytype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/delivery_type" />
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_staticdeliverytype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_deliverytype"
+                    android:text="Delivery:"
+                    android:textColor="@color/textfonts"
+                    android:textSize="16dp"
+                    app:fontName="GothamMedium" />
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_deliverytype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/text_staticdeliverytype"
+                    android:textColor="@color/textfonts"
+                    android:textSize="16dp"
+                    app:fontName="GothamLight" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/resto_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resto_delivery"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_restocall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/call_red" />
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_staticcall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_restocall"
+                    android:text="Call:"
+                    android:textColor="@color/textfonts"
+                    android:textSize="16dp"
+                    app:fontName="GothamMedium" />
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/text_staticcall"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:textColor="@color/textfonts"
+                    android:textSize="16dp"
+                    app:fontName="GothamLight" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/resto_direction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resto_call"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_restodirection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/direction" />
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_staticdirection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_restodirection"
+                    android:text="Get directions"
+                    android:textColor="@color/textfonts"
+                    android:textSize="16dp"
+                    app:fontName="GothamMedium" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/resto_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resto_direction"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_restowebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/website" />
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_staticwebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_restowebsite"
+                    android:text="Website:"
+                    android:textColor="@color/textfonts"
+                    android:textSize="16dp"
+                    app:fontName="GothamMedium" />
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_website"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/text_staticwebsite"
+                    android:autoLink="web"
+                    android:textColor="@color/textfonts"
+                    android:textSize="16dp"
+                    app:fontName="GothamLight" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/resto_website"
+                android:layout_marginTop="10dp"
+                android:background="@color/buttonfonts" />
+
+            <RelativeLayout
+                android:id="@+id/resto_downloadmenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_restodownload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/downloads" />
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_staticdonwloadmenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_restodownload"
+                    android:text="Download menu in pdf"
+                    android:textColor="@color/textfonts"
+                    android:textSize="16dp"
+                    app:fontName="GothamMedium" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/linearcoupon"
+                android:background="@color/white" />
+
+            <in.pjitsol.zapnabit.Ui.CustomTextView
+                android:id="@+id/text_preorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/resto_downloadmenu"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/paymentarrival"
+                android:textColor="@color/red"
+                android:textSize="15dp"
+                app:fontName="GothamMedium" />
+
+            <LinearLayout
+                android:id="@+id/linearcoupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_preorder"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_coupon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/coupon_drawable"
+                    android:drawableLeft="@drawable/coupons"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Coupons"
+                    android:textColor="@color/textfonts"
+                    app:fontName="GothamMedium" />
+
+                <in.pjitsol.zapnabit.Ui.CustomTextView
+                    android:id="@+id/text_discounts"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/coupon_drawable"
+                    android:drawableLeft="@drawable/discount"
+                    android:drawablePadding="15dp"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Discounts"
+                    android:textColor="@color/textfonts"
+                    app:fontName="GothamMedium" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_Reorder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/sepratorline"
+            android:gravity="center"
+            android:text="RE ORDER"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:fontName="GothamMedium" />
+
+        <in.pjitsol.zapnabit.Ui.CustomTextView
+            android:id="@+id/text_viewOrder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:gravity="center"
+            android:text="VIEW &amp; ORDER"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:fontName="GothamMedium" />
+    </LinearLayout>
+
+</RelativeLayout>

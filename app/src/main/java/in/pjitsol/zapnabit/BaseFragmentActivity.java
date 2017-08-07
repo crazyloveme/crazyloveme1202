@@ -2109,7 +2109,7 @@ public class BaseFragmentActivity extends FragmentActivity implements OnClickLis
         if (mGoogleApiClient == null || !mGoogleApiClient.isConnected()) {
             mGoogleApiClient = new GoogleApiClient.Builder(this)
                     .addApi(Wallet.API, new Wallet.WalletOptions.Builder()
-                            .setEnvironment(WalletConstants.ENVIRONMENT_SANDBOX)
+                            .setEnvironment(WalletConstants.ENVIRONMENT_TEST)
                             .build())
                     .enableAutoManage(this, BaseFragmentActivity.this)
                     .build();
@@ -2142,7 +2142,8 @@ public class BaseFragmentActivity extends FragmentActivity implements OnClickLis
                 .setBuyButtonWidth(WalletFragmentStyle.Dimension.MATCH_PARENT);
 
         WalletFragmentOptions walletFragmentOptions = WalletFragmentOptions.newBuilder()
-                .setEnvironment(WalletConstants.ENVIRONMENT_SANDBOX)
+                //.setEnvironment(WalletConstants.ENVIRONMENT_SANDBOX)
+                .setEnvironment(WalletConstants.ENVIRONMENT_TEST)
                 .setFragmentStyle(walletFragmentStyle)
                 .setTheme(WalletConstants.THEME_LIGHT)
                 .setMode(WalletFragmentMode.BUY_BUTTON)
@@ -2165,7 +2166,7 @@ public class BaseFragmentActivity extends FragmentActivity implements OnClickLis
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-
+        System.out.print("ff");
     }
 
     public void requestFullWallet() {
